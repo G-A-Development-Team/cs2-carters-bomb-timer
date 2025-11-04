@@ -1,16 +1,5 @@
 -- CS2 Bomb Timer (FFI + Schema) - Carter-style visuals
--- Redone visuals to match Carter's Bomb Timer (size, layout, fonts, colors)
 -- Uses CS2 schema fields where available, with legacy fallbacks for robustness.
-
--- GUI: Visuals -> Carter's Bomb Timer controls for position (X,Y)
-
--- Notes on visuals (matching Carter):
--- - Panel: 125x67 at (X,Y), dark background 20,20,20,210
--- - Bomb icon: 60x50 slot drawn at (X-8, Y)
--- - Timer label: Bahnschrift 17 at (X+38, Y-2), white
--- - Damage label: Bahnschrift 15 at (X+38, Y+15), grey/red for fatal
--- - Main bar: 121x10 at (X+2, Y+55), color green/yellow/red based on seconds left
--- - Defuse bar: 121x4 at (X+2, Y+61), blue if defuse in time else yellow
 
 local ffi = ffi
 local C = ffi.C
@@ -396,3 +385,4 @@ callbacks.Register("Draw", on_draw)
 callbacks.Register("Unload", function() end)
 
 print("[bomb_timer_ffi] Loaded Carter-style visuals for CS2 bomb timer.")
+
