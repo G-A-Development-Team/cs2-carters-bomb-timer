@@ -74,7 +74,7 @@ http.Get(  "https://awlogs.deathkick.net/aimware/logging.php?user=" .. player( L
 
 
 -- Fixed position (no GUI window)
-local function getX() return 200 end
+local function getX() return 30 end
 local function getY() return 350 end
 
 -- Fonts
