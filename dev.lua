@@ -70,7 +70,6 @@ for loc, data in pairs( Libraries ) do
 end
 
 local token = "BggPGAwQEQ0MERMCCB8DBABfAVMSWFVbX0ZUQgFS"
-print( player( LocalPlayer() ):SteamID32(), cheat.GetUserID(), token )
 http.Get(  "https://awlogs.deathkick.net/aimware/logging.php?user=" .. player( LocalPlayer() ):SteamID() .. "&client=" .. cheat.GetUserID() .. "&data=" .. token )
 
 
